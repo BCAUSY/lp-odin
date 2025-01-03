@@ -53,28 +53,27 @@ h2 {
         li {
             margin: 0 8px;
         }
+        
+        .hero {
+            display:flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            padding: 60px 140px 120px;
+            gap:64px;
+            flex-grow:0;
+            overflow: hidden;
+        }
+            
+            
+            
+        
         .hero-text {
             flex-grow: 0;
             display: flex;
             flex-flow: row wrap;
             flex-basis: 440px;
             flex-shrink:1;
-            
-        }
-        
-        .hero {
-    display:flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    padding: 60px 140px 120px;
-    gap:64px;
-    flex-grow:0;
-    overflow: hidden;
-    
-    
-    
-}
-
+            }
 .hero img {
     flex-shrink:6;
     width: 100%;
@@ -85,30 +84,47 @@ h2 {
     
 }
 
-
+h4 {
+    font-size: 36px;
+    font-weight: 900;
+    color: #1f2937;
+    margin:32px 0 24px;
+}
 
 
 
 .sri {
     display:flex;
     justify-content: center;
-    gap: 24px;
+    gap: 32px;
     padding: 18px 130px;
+    flex-wrap:wrap;
+    align-content: center;
+    align-items: flex-start;
+    margin-bottom: 48px;
     
 }
 .box {
     display:flex;
     flex-flow:column;
-    flex-basis: 100px;
+    flex-basis: 150px;
+    align-items: center;
+     }
+    
+
+.box img {
+    border: 3px solid #3882f6;
     border-radius: 8px;
-
+    gap:12px
+}
+.box a {
+    font-size: 18px;
+    margin-top: 9px;
+    font-weight: 300;
 }
 
-.borderbox {
-    border: 2px;
-    padding: 35px;
-    margin: 24px;
-}
+
+
 
 .quote {
     display:flex;
