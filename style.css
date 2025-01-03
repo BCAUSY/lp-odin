@@ -3,7 +3,9 @@ body {
     display:flex;
     flex-flow:column;
     text-align: center;
-    
+    height: 100%;
+    max-width:1912px;
+    margin:auto;
 }
 
 .hero, 
@@ -77,7 +79,7 @@ h2 {
 .hero img {
     flex-shrink:6;
     width: 100%;
-    height: 350px;
+    height: 324px;
     object-fit: cover;
     flex-grow: 1;
     box-sizing: border-box;
@@ -107,23 +109,27 @@ h4 {
 .box {
     display:flex;
     flex-flow:column;
-    flex-basis: 150px;
+    flexg-grow:0;
     align-items: center;
+
      }
     
 
 .box img {
     border: 3px solid #3882f6;
     border-radius: 8px;
-    gap:12px
+    gap:16px;
+    object-fit:cover;
+    box-sizing: border-box;
 }
 .box a {
-    font-size: 18px;
+    font-size: 12px;
     margin-top: 9px;
     font-weight: 300;
+    width: 124px;
+    text-align: center;
+    
 }
-
-
 
 
 .quote {
@@ -131,20 +137,23 @@ h4 {
     flex-flow:column;
     background-color: #e5e7eb;
     padding: 64px 130px;
-    align-items: flext-start;
+    align-items: flex-start;
+    justify-content: flex-start;
     
 }
 #quo {
     text-align: left;
     font-size: 36px;
-    font-weight: 200;
+    font-weight: 350;
     font-style: italic;
     margin: 0;
-    padding-left: 130px;
+   
+   
 }
 #thor {
     align-self:flex-end;
     font-weight: bold;
+    margin: 0;
 }
 
 button {
