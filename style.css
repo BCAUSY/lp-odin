@@ -13,11 +13,12 @@ body {
     text-align: left;
 }
 
-        h1 {
-            font-size: 24px;
-            margin-top: 0;
-        }
-        h2 {
+
+h1 {
+    font-size: 24px;
+    margin-top: 0;
+}
+h2 {
             font-size: 18px;
             color: #e5e7eb;
         }
@@ -25,9 +26,9 @@ body {
             font-size: 48px;
             color: #f9faf8;
             font-weight: 900;
-            margin: 0;
+            margin: 0 0 15px;
         }
-
+        
         .link {
             text-decoration: none;
             font: size 18px;
@@ -52,24 +53,91 @@ body {
         li {
             margin: 0 8px;
         }
-
-.hero {
+        .hero-text {
+            flex-grow: 0;
+            display: flex;
+            flex-flow: row wrap;
+            flex-basis: 440px;
+            flex-shrink:1;
+            
+        }
+        
+        .hero {
     display:flex;
     align-items: flex-start;
-    justify-content: flex-start;
-    padding: 15px 140px;
-
+    justify-content: space-between;
+    padding: 60px 140px 120px;
+    gap:64px;
+    flex-grow:0;
+    overflow: hidden;
+    
+    
+    
 }
+
+.hero img {
+    flex-shrink:6;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    flex-grow: 1;
+    box-sizing: border-box;
+    
+}
+
+
+
+
 
 .sri {
     display:flex;
     justify-content: center;
     gap: 24px;
+    padding: 18px 130px;
     
 }
 .box {
     display:flex;
     flex-flow:column;
     flex-basis: 100px;
+    border-radius: 8px;
+
+}
+
+.borderbox {
+    border: 2px;
+    padding: 35px;
+    margin: 24px;
+}
+
+.quote {
+    display:flex;
+    flex-flow:column;
+    background-color: #e5e7eb;
+    padding: 64px 130px;
+    align-items: flext-start;
+    
+}
+#quo {
+    text-align: left;
+    font-size: 36px;
+    font-weight: 200;
+    font-style: italic;
+    margin: 0;
+    padding-left: 130px;
+}
+#thor {
+    align-self:flex-end;
+    font-weight: bold;
+}
+
+button {
+    border: none;
+    border-radius: 8px;
+    padding: 24px 48px;
+    background-color: #3882f6;
+    color: #f9faf8;
+    font-weight: 900;
+    font-size: 16px;
 
 }
